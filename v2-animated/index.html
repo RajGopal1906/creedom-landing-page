@@ -3,19 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Creedom — AI Growth Coach for YouTube, Instagram & TikTok Creators</title>
+  <title>Creedom — AI Growth Coach</title>
   <meta name="description" content="Stop guessing. Start growing. Creedom gives you personalized AI feedback, analytics, and strategy built exclusively for YouTube, Instagram and TikTok creators." />
-  <meta property="og:title" content="Creedom — AI Growth Coach for Creators" />
-  <meta property="og:description" content="Stop guessing. Start growing. Creedom gives you personalized AI feedback, analytics, and strategy built exclusively for YouTube, Instagram and TikTok creators." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://creedom.ai" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/src/style.css" />
 </head>
-<body>
+<body data-theme="light">
 
   <!-- ═══════ NAVBAR ═══════ -->
   <nav class="nav" id="navbar">
@@ -24,13 +20,17 @@
       <div class="logo__name">Creedom<small>ai · for creators</small></div>
     </a>
     <div class="navlinks" id="navlinks">
-      <a href="#features">Features</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="#faq">FAQ</a>
+      <a href="#features" class="hover-underline">Features</a>
+      <a href="#how-it-works" class="hover-underline">How it works</a>
+      <a href="#faq" class="hover-underline">FAQ</a>
     </div>
     <div class="nav__cta">
+      <button id="theme-toggle" class="btn btn--icon" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
       <a href="https://app.creedom.ai" class="btn btn--ghost">Log in</a>
-      <a href="https://app.creedom.ai" class="btn btn--primary">Get started free</a>
+      <a href="https://app.creedom.ai" class="btn btn--primary hover-scale">Get started free</a>
     </div>
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
@@ -39,18 +39,18 @@
 
   <!-- ═══════ HERO ═══════ -->
   <section class="hero" id="home">
-    <div class="hero__content" data-animate="fade-up">
-      <div class="pill"><span class="ig-badge">IG</span> Built for Instagram creators</div>
+    <div class="hero__content" data-animate="slide-right">
+      <div class="pill animate-pulse"><span class="ig-badge">IG</span> Built for Instagram creators</div>
       <h1 class="hero__tag">AI<br/><em>growth companion</em><br/>for creators.</h1>
       <p class="hero__sub">Helps you increase followers and views — organically. No bots, no boosts, just a smart sidekick that learns your voice and your audience.</p>
       <div class="hero__cta">
-        <a href="https://app.creedom.ai" class="btn btn--primary btn--lg">Get started — it's free</a>
-        <a href="#how-it-works" class="btn btn--lg btn--outline">See how it works ↓</a>
+        <a href="https://app.creedom.ai" class="btn btn--primary btn--lg hover-scale">Get started — it's free</a>
+        <a href="#how-it-works" class="btn btn--lg btn--outline hover-scale">See how it works ↓</a>
       </div>
       <p class="hero__caption">— 100k+ creators already on the platform · growing with us</p>
     </div>
-    <div class="hero__visual" data-animate="fade-up" data-delay="200">
-      <div class="phone">
+    <div class="hero__visual" data-animate="slide-left">
+      <div class="phone hover-float">
         <div class="phone__notch"></div>
         <div class="ig-profile">
           <div class="ig-status"><span>9:41</span><span>●●● ⌃ ▮</span></div>
@@ -70,9 +70,9 @@
             <span class="link">creedom.ai/creator</span>
           </div>
           <div class="ig-actions">
-            <div class="b pri">Following ▾</div>
-            <div class="b">Message</div>
-            <div class="b">+</div>
+            <div class="b pri hover-scale">Following ▾</div>
+            <div class="b hover-scale">Message</div>
+            <div class="b hover-scale">+</div>
           </div>
           <div class="ig-tabs">
             <div class="active">
@@ -86,64 +86,63 @@
             </div>
           </div>
           <div class="ig-grid">
-            <div></div><div></div><div></div>
-            <div></div><div></div><div></div>
-            <div></div><div></div><div></div>
+            <div class="hover-grow"></div><div class="hover-grow"></div><div class="hover-grow"></div>
+            <div class="hover-grow"></div><div class="hover-grow"></div><div class="hover-grow"></div>
+            <div class="hover-grow"></div><div class="hover-grow"></div><div class="hover-grow"></div>
           </div>
         </div>
       </div>
-      <!-- Floating metric callouts -->
-      <div class="metric metric--pink metric--tl"><div class="metric__n">5×</div><div class="metric__l">engagement</div></div>
-      <div class="metric metric--dark metric--tr"><div class="metric__n">8×</div><div class="metric__l">followers</div></div>
-      <div class="metric metric--ml"><div class="metric__n">+312%</div><div class="metric__l">reach</div></div>
-      <div class="metric metric--pink metric--br"><div class="metric__n">2.4M</div><div class="metric__l">views / mo</div></div>
+      <div class="metric metric--pink metric--tl metric-anim"><div class="metric__n">5×</div><div class="metric__l">engagement</div></div>
+      <div class="metric metric--dark metric--tr metric-anim"><div class="metric__n">8×</div><div class="metric__l">followers</div></div>
+      <div class="metric metric--ml metric-anim"><div class="metric__n">+312%</div><div class="metric__l">reach</div></div>
+      <div class="metric metric--pink metric--br metric-anim"><div class="metric__n">2.4M</div><div class="metric__l">views / mo</div></div>
     </div>
   </section>
 
   <!-- ═══════ RADIAL / FEATURES ═══════ -->
   <section class="radial" id="features">
-    <div class="radial__hd" data-animate="fade-up">
+    <div class="radial__hd" data-animate="slide-up">
       <div class="radial__eyebrow">whatever you do</div>
       <h2 class="radial__title">Cree's <em>superpowers.</em></h2>
     </div>
     <div class="radial__diagram" id="radial-diagram">
       <svg class="lines" viewBox="0 0 1100 640" preserveAspectRatio="none" id="radial-lines"></svg>
       <div class="radial__hub">
-        <div class="radial__hub-bg"></div>
-        <img src="/mascot.png" alt="Creedom mascot" />
+        <div class="radial__hub-bg pulse-glow"></div>
+        <img src="/mascot.png" alt="Creedom mascot" class="hover-wiggle" />
       </div>
-      <div class="spoke spoke--1" data-animate="fade-up" data-delay="200"><div class="spoke__tag">/ 01</div><div class="spoke__name">Growth Map</div><div class="spoke__desc">Your 30-day plan. Tuned to your niche.</div></div>
-      <div class="spoke spoke--2" data-animate="fade-up" data-delay="300"><div class="spoke__tag">/ 02</div><div class="spoke__name">Viral Scripts</div><div class="spoke__desc">Hook-first scripts. Built on what's working now.</div></div>
-      <div class="spoke spoke--3" data-animate="fade-up" data-delay="400"><div class="spoke__tag">/ 03</div><div class="spoke__name">Chat Companion</div><div class="spoke__desc">A coach in your pocket. Brainstorm. Plan.</div></div>
-      <div class="spoke spoke--4" data-animate="fade-up" data-delay="500"><div class="spoke__tag">/ 04</div><div class="spoke__name">Edit Notes</div><div class="spoke__desc">Frame-level feedback on your reels.</div></div>
-      <div class="spoke spoke--5" data-animate="fade-up" data-delay="600"><div class="spoke__tag">/ 05</div><div class="spoke__name">Brain Twin</div><div class="spoke__desc">Trained on you. Sounds like you.</div></div>
-      <div class="spoke spoke--6" data-animate="fade-up" data-delay="700"><div class="spoke__tag">/ 06</div><div class="spoke__name">Idea Signals</div><div class="spoke__desc">Trends decoded — before they peak.</div></div>
+      <div class="spoke spoke--1 hover-lift" data-animate="fade-in" data-delay="100"><div class="spoke__tag">/ 01</div><div class="spoke__name">Growth Map</div><div class="spoke__desc">Your 30-day plan. Tuned to your niche.</div></div>
+      <div class="spoke spoke--2 hover-lift" data-animate="fade-in" data-delay="200"><div class="spoke__tag">/ 02</div><div class="spoke__name">Viral Scripts</div><div class="spoke__desc">Hook-first scripts. Built on what's working now.</div></div>
+      <div class="spoke spoke--3 hover-lift" data-animate="fade-in" data-delay="300"><div class="spoke__tag">/ 03</div><div class="spoke__name">Chat Companion</div><div class="spoke__desc">A coach in your pocket. Brainstorm. Plan.</div></div>
+      <div class="spoke spoke--4 hover-lift" data-animate="fade-in" data-delay="400"><div class="spoke__tag">/ 04</div><div class="spoke__name">Edit Notes</div><div class="spoke__desc">Frame-level feedback on your reels.</div></div>
+      <div class="spoke spoke--5 hover-lift" data-animate="fade-in" data-delay="500"><div class="spoke__tag">/ 05</div><div class="spoke__name">Brain Twin</div><div class="spoke__desc">Trained on you. Sounds like you.</div></div>
+      <div class="spoke spoke--6 hover-lift" data-animate="fade-in" data-delay="600"><div class="spoke__tag">/ 06</div><div class="spoke__name">Idea Signals</div><div class="spoke__desc">Trends decoded — before they peak.</div></div>
     </div>
   </section>
 
   <!-- ═══════ HOW IT WORKS ═══════ -->
   <section class="how" id="how-it-works">
-    <div class="how__hd" data-animate="fade-up">
+    <div class="how__hd" data-animate="slide-up">
       <h2 class="how__title">From sign-up<br/>to your first <em>viral.</em></h2>
       <div class="how__meta">04 STEPS · ~4 MIN</div>
     </div>
     <div class="how__steps">
-      <div class="step" data-animate="fade-up" data-delay="100">
+      <div class="step hover-scale-card" data-animate="slide-up" data-delay="100">
         <div class="step__n">01</div>
         <div class="step__t">Sign up</div>
         <div class="step__d">Free, no card. Apple, Google, or email.</div>
       </div>
-      <div class="step" data-animate="fade-up" data-delay="200">
+      <div class="step hover-scale-card" data-animate="slide-up" data-delay="200">
         <div class="step__n">02</div>
         <div class="step__t">Connect IG</div>
         <div class="step__d">Read-only. We see what's landing.</div>
       </div>
-      <div class="step" data-animate="fade-up" data-delay="300">
+      <div class="step hover-scale-card" data-animate="slide-up" data-delay="300">
         <div class="step__n">03</div>
         <div class="step__t">Get your map</div>
         <div class="step__d">A 30-day plan in seconds.</div>
       </div>
-      <div class="step" data-animate="fade-up" data-delay="400">
+      <div class="step hover-scale-card" data-animate="slide-up" data-delay="400">
         <div class="step__n">04</div>
         <div class="step__t">Post & grow</div>
         <div class="step__d">Daily nudges. Scripts. Notes.</div>
@@ -153,19 +152,19 @@
 
   <!-- ═══════ FAQ ═══════ -->
   <section class="faq" id="faq">
-    <div class="faq__hd" data-animate="fade-up">
+    <div class="faq__hd" data-animate="slide-up">
       <h2 class="faq__title">Frequently <em>asked.</em></h2>
     </div>
     <div class="faq__list" id="faq-list">
-      <!-- FAQ items are injected by JS with real data from creedom.ai -->
+      <!-- FAQ items are injected by JS -->
     </div>
   </section>
 
   <!-- ═══════ CTA BANNER ═══════ -->
-  <section class="cta-banner" data-animate="fade-up">
+  <section class="cta-banner" data-animate="scale-up">
     <h2 class="cta-banner__title">Start building better content — <em>today.</em></h2>
     <p class="cta-banner__sub">Get feedback, scripts, ideas, and smart replies in one companion.</p>
-    <a href="https://app.creedom.ai" class="btn btn--primary btn--lg">Get 30 Credits for Free 🎁 <span class="btn__note">No credit card required</span></a>
+    <a href="https://app.creedom.ai" class="btn btn--primary btn--lg hover-pulse">Get 30 Credits for Free 🎁 <span class="btn__note">No credit card required</span></a>
   </section>
 
   <!-- ═══════ FOOTER ═══════ -->
@@ -177,24 +176,24 @@
     <div>
       <h5>Product</h5>
       <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="https://creedom.ai/superpowers">Superpowers</a></li>
+        <li><a href="#features" class="hover-underline">Features</a></li>
+        <li><a href="#how-it-works" class="hover-underline">How it works</a></li>
+        <li><a href="https://creedom.ai/superpowers" class="hover-underline">Superpowers</a></li>
       </ul>
     </div>
     <div>
       <h5>Resources</h5>
       <ul>
-        <li><a href="https://hub.creedom.ai/">Blog</a></li>
-        <li><a href="https://feed.creedom.ai/">Creator Feed</a></li>
+        <li><a href="https://hub.creedom.ai/" class="hover-underline">Blog</a></li>
+        <li><a href="https://feed.creedom.ai/" class="hover-underline">Creator Feed</a></li>
       </ul>
     </div>
     <div>
       <h5>Legal</h5>
       <ul>
-        <li><a href="https://creedom.ai/privacy">Privacy</a></li>
-        <li><a href="https://creedom.ai/terms">Terms</a></li>
-        <li><a href="https://creedom.ai/refund-policy">Refund Policy</a></li>
+        <li><a href="https://creedom.ai/privacy" class="hover-underline">Privacy</a></li>
+        <li><a href="https://creedom.ai/terms" class="hover-underline">Terms</a></li>
+        <li><a href="https://creedom.ai/refund-policy" class="hover-underline">Refund Policy</a></li>
       </ul>
     </div>
   </footer>

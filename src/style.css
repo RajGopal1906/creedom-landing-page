@@ -63,7 +63,8 @@ img{max-width:100%;display:block;}
 .ig-badge{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:5px;background:linear-gradient(135deg,#ff3ea5,#ffb13a);color:#fff;font-size:10px;font-weight:700;}
 
 /* ── Hero ── */
-.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;padding:60px 32px 100px;align-items:center;max-width:1300px;margin:0 auto;}
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 32px 100px; align-items: center; max-width: 1300px; margin: 0 auto; }
+.hero__content { max-width: 100%; padding-right: 40px; }
 .hero__tag{font-family:var(--display);font-weight:800;font-size:clamp(48px,7.2vw,104px);line-height:.94;letter-spacing:-.035em;margin:18px 0 0;}
 .hero__tag em{font-style:italic;font-weight:400;background:linear-gradient(90deg,#ff7ac6,var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent;}
 .hero__sub{font-size:18px;line-height:1.55;color:var(--text-soft);max-width:480px;margin-top:24px;}
