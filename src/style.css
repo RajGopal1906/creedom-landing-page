@@ -63,7 +63,7 @@ img{max-width:100%;display:block;}
 .ig-badge{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:5px;background:linear-gradient(135deg,#ff3ea5,#ffb13a);color:#fff;font-size:10px;font-weight:700;}
 
 /* ── Hero ── */
-.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; padding: 60px 32px 100px; align-items: center; max-width: 1300px; margin: 0 auto; }
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; padding: 60px 32px 40px; align-items: center; max-width: 1300px; margin: 0 auto; }
 .hero__content { max-width: 100%; padding-right: 20px; }
 .hero__tag{font-family:var(--display);font-weight:800;font-size:clamp(44px,6.5vw,96px);line-height:.94;letter-spacing:-.035em;margin:18px 0 0;}
 .hero__tag em{font-style:italic;font-weight:400;background:linear-gradient(90deg,#ff7ac6,var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent;}
@@ -75,7 +75,7 @@ img{max-width:100%;display:block;}
 /* ── Phone ── */
 .hero__visual{position:relative;display:flex;align-items:center;justify-content:center;padding:20px;}
 .hero__phone-wrapper{position:relative;width:280px;height:580px;flex-shrink:0;}
-.phone{position:absolute;inset:0;background:#fff;border:8px solid #15151a;border-radius:38px;box-shadow:0 30px 60px rgba(0,0,0,.25),8px 8px 0 rgba(0,0,0,.92);overflow:hidden;}
+.phone{position:absolute;inset:0;background:#fff;border:8px solid #15151a;border-radius:38px;box-shadow:0 30px 60px rgba(0,0,0,.25),8px 8px 0 rgba(0,0,0,.92);overflow:hidden;z-index:10;}
 .phone__notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:88px;height:22px;background:#15151a;border-radius:999px;z-index:5;}
 .ig-profile{position:absolute;inset:0;background:#fff;color:#15151a;display:flex;flex-direction:column;font-family:-apple-system,'Inter',sans-serif;}
 .ig-status{height:36px;display:flex;align-items:center;justify-content:space-between;padding:12px 22px 0;font-size:11px;font-weight:600;flex-shrink:0;}
@@ -113,20 +113,20 @@ img{max-width:100%;display:block;}
 .ig-grid>div:nth-child(9){background:linear-gradient(135deg,#15151a,#444);}
 
 /* ── Metrics ── */
-.metric{position:absolute;background:#fff;color:#15151a;border:1.5px solid #15151a;border-radius:16px;padding:12px 16px;box-shadow:4px 4px 0 #15151a;font-family:var(--display);z-index:10;min-width:118px;}
+.metric{position:absolute;background:#fff;color:#15151a;border:1.5px solid #15151a;border-radius:16px;padding:12px 16px;box-shadow:4px 4px 0 #15151a;font-family:var(--display);z-index:1;min-width:118px;}
 .metric__n{font-size:38px;font-weight:900;line-height:1;letter-spacing:-.03em;}
 .metric__l{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:5px;font-weight:500;}
 .metric--pink{background:var(--pink);color:#fff;}
 .metric--pink .metric__l{color:rgba(255,255,255,.9);}
 .metric--dark{background:#15151a;color:#fff;}
 .metric--dark .metric__l{color:#b8b3a4;}
-.metric--tl{left:-90px;top:6%;transform:rotate(-4deg);}
-.metric--tr{right:-90px;top:16%;transform:rotate(3deg);}
-.metric--ml{left:-110px;top:48%;transform:rotate(2deg);}
-.metric--br{right:-100px;bottom:18%;transform:rotate(4deg);}
+.metric--tl{left:-70px;top:6%;transform:rotate(-4deg);}
+.metric--tr{right:-65px;top:16%;transform:rotate(3deg);}
+.metric--ml{left:-85px;top:48%;transform:rotate(2deg);}
+.metric--br{right:-80px;bottom:18%;transform:rotate(4deg);}
 
 /* ── Radial / Features ── */
-.radial{padding:100px 32px 120px;background:linear-gradient(180deg,var(--bg),var(--bg-2));border-top:1px solid var(--border);}
+.radial{padding:60px 32px 120px;background:linear-gradient(180deg,var(--bg),var(--bg-2));border-top:1px solid var(--border);}
 .radial__hd{text-align:center;margin-bottom:70px;}
 .radial__eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--neon);font-weight:500;display:inline-flex;align-items:center;gap:8px;}
 .radial__eyebrow::before,.radial__eyebrow::after{content:'';width:24px;height:1px;background:var(--neon);}
