@@ -147,7 +147,7 @@ img { max-width: 100%; display: block; }
 [data-theme="dark"] .hero__tag em { background: linear-gradient(90deg, #ff7ac6, var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero__sub { font-size: 18px; line-height: 1.55; color: var(--text-soft); max-width: 480px; margin-top: 24px; }
 .hero__cta { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
-.hero__caption { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--text-muted); margin-top: 36px; display: flex; align-items: center; gap: 8px; }
+.hero__caption { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--text-muted); margin-top: 20px; display: flex; align-items: center; gap: 8px; }
 .hero__caption strong { color: var(--text); font-weight: 700; }
 
 /* ── Phone ── */
